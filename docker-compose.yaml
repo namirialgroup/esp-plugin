@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  esp-dotnet:
+    container_name: "esp-dotnet"
+    build:
+      context: ./src/c#/Namirial.Esp.Plugin.Dotnet
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+      
