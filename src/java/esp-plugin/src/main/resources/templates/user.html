@@ -8,7 +8,12 @@
 </head>
 <body>
 <header>
-    <%- include('partials/header'); %>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: #0066cc !important;">
+        <div class="container text-center">
+            <a class="navbar-brand" href="/"><h1 style="color: white">ESP Java Plugin</h1></a>
+            <a href="https://www.namirial.com/"><img class="logo-fluid" src="/img/namirial-logo-bianco.png" alt="This is the page logo"/></a>
+        </div>
+    </nav>
 </header>
 <div class="container">
     <main role="main" class="pb-3">
@@ -18,13 +23,12 @@
             <br/>
             <span>User JWT Claims (What is a JWT Claims? <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1">Learn more</a>)</span>
         </div>
-
-        <% Object.keys(props).forEach(prop => {%>
-            <div class="row">
-                <div class="col-6"><%= prop %></div>
-                <div class="col-6"><%= props[prop] %></div>
-            </div>
-        <% }); %>
+        {#for x in model.userProperties}
+        <div class="row">
+            <div class="col-6">{x.key}</div>
+            <div class="col-6">{x.value}</div>
+        </div>
+        {/for}
     </main>
 </div>
 
