@@ -5,7 +5,7 @@ The plugin is available for the most famous programming languages:
 - [Javascript](./doc/javascript.md)
 - [PHP]()
 - [Python]()
-- [Java]()
+- [Java](./doc/java.md)
 - [Kotlin]()
 - [Swift]()
 
@@ -13,3 +13,4 @@ The plugin is available for the most famous programming languages:
 
 # Authors
 * [Federico Simonetti](https://github.com/Soapfedan) (maintainer)
+* [Simone Accattoli](https://github.com/SimoneAcca) (maintainer)

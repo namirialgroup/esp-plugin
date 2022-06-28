@@ -15,3 +15,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+  esp-java:
+    container_name: "esp-java"
+    build:
+      context: ./src/java/esp-plugin
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "5005:5005"
