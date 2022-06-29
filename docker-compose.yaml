@@ -8,6 +8,13 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:80"
+  esp-php:
+    container_name: "esp-php"
+    image: docker.io/bitnami/laravel:9
+    ports:
+      - '8000:8000'
+    volumes:
+      - './src/php/esp-plugin:/app'
   esp-javascript:
     container_name: "esp-javascript"
     build:
