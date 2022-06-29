@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/site.css' %}">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: #0066cc !important;">
+        <div class="container text-center">
+            <a class="navbar-brand" href="/"><h1 style="color: white">ESP Python Plugin</h1></a>
+            <a href="https://www.namirial.com/"><img class="logo-fluid" src="{% static '/img/namirial-logo-bianco.png' %}" alt="This is the page logo"/></a>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        <div class="text-center">
+            <h1 class="display-4">Welcome to ESP Java Plugin</h1>
+            <a href="https://github.com/namirialgroup/esp-plugin"><h2 class="display-4">Plugin Github Repository</h2></a>
+            <br/>
+            <a class="btn btn-primary" id="key" href="/key">Generate authn key</a>
+        </div>
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2022 - ESP <a class="navbar-brand" href="https://namirialgroup.github.io/esp-docs/">Check the latest Documentation.</a>
+    </div>
+</footer>
+
+<script src="{% static 'lib/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'lib/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/site.js' %}"></script>
+
+<script type="text/javascript " src="{% static 'js/jquery.min.js' %} "></script>
+
+</body>
+</html>
