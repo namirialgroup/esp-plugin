@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vb0vj%0arm(u4#57m#oe0xysz%(r9sbg#le2_c4p8srkj-kn66
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,3 +123,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# ESP SETTINGS
+ESP_HOST = 'INSERT HOST PARAMETER'
+ESP_ENVIRONMENT_NAME = 'INSERT ENVIRONMENT NAME PARAMETER'
+ESP_FINAL = 'http://127.0.0.1:8000/user'
+ESP_API_KEY = 'INSERT APIKEY PARAMETER'
+ESP_ATTRIBUTES = 'Base'
+ESP_LEVEL = 1
+ESP_SPID_TYPE = ''

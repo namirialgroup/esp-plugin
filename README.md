@@ -4,7 +4,7 @@ The plugin is available for the most famous programming languages:
 - [C#](./doc/c_sharp.md)
 - [Javascript](./doc/javascript.md)
 - [PHP](./doc/php.md)
-- [Python]()
+- [Python](./doc/python.md)
 - [Java](./doc/java.md)
 - [Kotlin]()
 - [Swift]()

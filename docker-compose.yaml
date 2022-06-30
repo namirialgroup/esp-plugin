@@ -30,3 +30,10 @@ services:
     ports:
       - "8080:8080"
       - "5005:5005"
+  esp-python:
+    container_name: "esp-python"
+    build:
+      context: ./src/python
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"

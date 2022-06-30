@@ -1,17 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/site.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/site.css' %}">
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: #0066cc !important;">
         <div class="container text-center">
-            <a class="navbar-brand" href="/"><h1 style="color: white">ESP Java Plugin</h1></a>
-            <a href="https://www.namirial.com/"><img class="logo-fluid" src="/img/namirial-logo-bianco.png" alt="This is the page logo"/></a>
+            <a class="navbar-brand" href="/"><h1 style="color: white">ESP Python Plugin</h1></a>
+            <a href="https://www.namirial.com/"><img class="logo-fluid" src="{% static '/img/namirial-logo-bianco.png' %}" alt="This is the page logo"/></a>
         </div>
     </nav>
 </header>
@@ -23,10 +24,10 @@
             <br/>
             <span>User JWT Claims (What is a JWT Claims? <a href="https://datatracker.ietf.org/doc/html/rfc7519#section-4.1">Learn more</a>)</span>
         </div>
-        {%  for x in model.userProperties %}
+        {%  for k, v in user_properties.items %}
         <div class="row">
-            <div class="col-6">{x.key}</div>
-            <div class="col-6">{x.value}</div>
+            <div class="col-6">{{ k }}</div>
+            <div class="col-6">{{ v }}</div>
         </div>
         {% endfor %}
     </main>
@@ -38,9 +39,9 @@
     </div>
 </footer>
 
-<script src="lib/jquery/dist/jquery.min.js"></script>
-<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/site.js"></script>
+<script src="{% static 'lib/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'lib/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/site.js' %}"></script>
 
 </body>
 </html>
