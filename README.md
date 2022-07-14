@@ -1,13 +1,12 @@
 # Namirial ESP Plugin
-The following repository contains an ESP plugin for SPID Authentication (a.k.a. the Italian 'Sistema Pubblico di Identità Digitale').
+The following repository contains an [ESP](https://namirialgroup.github.io/esp-docs/) plugin for SPID Authentication (a.k.a. the Italian 'Sistema Pubblico di Identità Digitale').
 The plugin is available for the most famous programming languages:
 - [C#](./doc/c_sharp.md)
 - [Javascript](./doc/javascript.md)
 - [PHP](./doc/php.md)
 - [Python](./doc/python.md)
 - [Java](./doc/java.md)
-- [Kotlin]()
-- [Swift]()
+- [Wordpress](./doc/wordpress.md)
 
 
 
